@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 78, 146), rgb(0, 4, 40));
+}
+
+.contaner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contaner h1 {
+    color: white;
+    margin: 20px;
+}
+
+.contaner main {
+    width: 80% !important;
+    height: 100%;
+    max-width: 1000px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 80px;
+}
+
+.contaner main .col {
+    width: 50% !important;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.contaner main .col h3 {
+    color: rgb(0, 78, 146);
+    margin: 10px 0;
+}
+
+.contaner main .col .add-expens {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    direction: rtl;
+
+
+
+}
+
+.contaner main .col .form-group {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.contaner main .col .form-group label {
+    font-size: 16px;
+    display: flex;
+    margin: 0 35px 5px 0;
+}
+
+.contaner main .col .form-group input {
+    width: 80%;
+    height: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0 auto;
+    border: 1px solid rgb(174, 171, 171);
+    outline: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.contaner main .col .form-group input:focus {
+    width: 85%;
+    box-shadow: 0px 0px 5px rgb(85, 85, 85);
+    transition: 0.3s;
+}
+
+.contaner main .col .add-expens .submit-form {
+    width: 230px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contaner main .col .add-expens .submit-form input {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 98, 204);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnDeleteWrapper {
+    width: 230px;
+    height: 15%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.expenses {
+    width: 100%;
+    height: 46%;
+}
+
+.expenses ul {
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+}
+
+.expenses ul li {
+    width: 90%;
+    height: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid gray;
+    margin: 1px 0;
+    border-radius: 5px;
+
+}
+
+.expenses ul li span {
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 98, 204);
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.budeg {
+    direction: rtl;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: rgb(184, 218, 255);
+    border-radius: 5px;
+    color: rgb(0, 64, 133);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-right: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.amount {
+    direction: rtl;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: rgb(195, 230, 203);
+    color: rgb(21, 87, 36);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-right: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.green {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(195, 230, 203);
+    color: rgb(21, 87, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.danger {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(223, 198, 203);
+    color: rgb(115, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+span {
+    margin: 0 4px 0 0;
+}
+
+#btnDelete {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(210, 55, 86);
+    color: white;
+    border: none;
+
+    margin-bottom: 5px;
+    cursor: pointer;
+}

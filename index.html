@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly budgeting program</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="contaner">
+        <header>
+            <h1>Weekly budgeting program</h1>
+        </header>
+        <main>
+            <div class="col">
+                <h3>
+                    List of expenses
+                </h3>
+                <div class="expenses">
+                    <ul id="list-group"></ul>
+                </div>
+                <div class="budeg">
+                    Week budget:
+                    <span id="total"> </span>
+                    $
+                </div>
+                <div class="amount">
+                    Remaining budget:
+                    <span id="left"></span>
+                    $
+                </div>
+
+            </div>
+            <div class="col" id="col">
+                <h3>Add expenses</h3>
+                <form action="#" class="add-expens" autocomplete="off">
+                    <div class="form-group">
+                        <label for="expens"> name: </label>
+                        <input type="text" id="expens" placeholder=" taxi , phone , ... ">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount"> Price: </label>
+                        <input type="text" id="amount" placeholder="200">
+                    </div>
+                    <div class="submit-form">
+                        <input type="submit" value="Add" />
+                    </div>
+
+                </form>
+                <div class="btnDeleteWrapper">
+
+                    <button id="btnDelete">Back</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./JS/app.JS"></script>
+</body>
+
+</html>
